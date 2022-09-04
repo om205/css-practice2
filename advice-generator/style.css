@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+@media screen and (min-width:550px){
+    .card{
+        width: 540px;
+    }
+    .divider-dekstop {
+        display: block;
+    }
+    .divider-mobile {
+        display: none;
+    }
+}
+@media screen and (max-width:550px) {
+    .card {
+        width: 350px;
+    }
+    .divider-dekstop {
+        display: none;
+    }
+    .divider-mobile {
+        display: block;
+    }
+}
+.card {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+}
+.head {
+    color: hsl(150, 100%, 66%);
+    font-size: 15px;
+    margin: 40px auto 0 auto;
+}
+.advice {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 30px 10%;
+    text-align: center;
+}
+.dice {
+    align-items: center;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 100%;
+    display: grid;
+    height: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+    width: 50px;
+}
+.dice:hover {
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+.divider-mobile,.divider-dekstop {
+    color: hsl(217, 19%, 38%);
+    margin: 0 auto;
+}
+.about {
+    align-self: end;
+    color: wheat;
+    position: absolute;
+}
